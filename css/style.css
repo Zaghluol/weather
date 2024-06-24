@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo .logo-content{
+    color: #fff;
+    font-size: 12px;
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 30px;
+}
+.nav-item:hover .nav-link{
+    color: #4212b4;
+}
+.nav-item:hover{
+    border: 1px #4212b4 solid;
+    border-radius: 20px;
+    scale: 1;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.home{
+    background-color: rgb(59, 58, 58);
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+}
+.inp{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.home .inp input{
+    color: #fff;
+    width: 80%;
+    height: 55px;
+    border: 2px rgb(47, 47, 47) solid;
+    border-radius: 20px;
+    margin: 20px auto;
+    background-color: rgb(49, 49, 49);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.home .inp .btn{
+    position: absolute;
+    top: 28%;
+    right: 11%;
+    width: 9%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.card{
+    background-color: darkgray;
+    border: none;
+}
+.card-body{
+    background-color: dimgray;
+}
+.card-body span{
+    margin: 0 0 0 5%;
+    color: rgb(180, 179, 179);
+}
+#max-deg{
+    font-size: 90px;
+    color: #fff;
+
+}
+.footer .inp{
+    background-color: grey;
+    margin-left: 10%;
+    border: 1px solid grey;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.footer .inp input{
+    border: none;
+    width: 80%;
+    background-color: transparent;
+    margin-left: 0;
+}
+.footer .inp button{
+    width: 19%;
+    padding: 10px 0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.ico-group{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.ico-group a{
+  background-color: rgb(44, 43, 43);
+  text-decoration: none;
+  border: 1px solid transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.ico-group a:hover{
+    background-color: dodgerblue;
+    color: #fff;
+}

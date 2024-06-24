@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-black py-4">
+        <div class="container">
+          <a class="navbar-brand logo" href="#">
+            <img src="images/logo.png" class="w-50 pe-3" alt="">
+            <div class="w-25 logo-content d-flex flex-column">
+                <p class="m-0 fw-bold">Weather</p>
+                <p class="m-0">tagline goes here</p>
+            </div>
+          </a>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <div class="home">
+           <div class="inp">
+            <input type="text" placeholder="      Find your location . . . ." name="" id="city">
+            <button id="find" class="btn btn-primary">Find</button>
+           </div>
+           <div class="row w-75 mx-auto py-5">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-footer">
+                  <small class="text-body-secondary">
+                    <div class="row">
+                      <div id="d1" class="an col-9">
+                      </div>
+                      <div id="date1" class="col-3">
+                      </div>
+                    </div>
+                  </small>
+                </div>
+               <div class="card-body py-4">
+                 <h5 id="city-name" class="text-white"></h5>
+                 <p id="max-deg"></p>
+                 <img id="cond-icon" class="w-25"alt="">
+                 <p id="cond-text" class="text-primary ms-3"></p>
+                 <span> <i class="fa-solid fa-umbrella"></i>20%</span>
+                 <span> <i class="fa-solid fa-wind"></i>18km/h</span>
+                 <span> <i class="fa-solid fa-compass"></i>East</span>
+               </div>
+               </div>
+            </div>
+            <div class="col-md-4 text-center ">
+              <div class="card h-100">
+                <div class="card-footer">
+                  <small class="text-body-secondary">
+                     <span id="d2"></span>
+                  </small>
+                </div>
+               <div class="card-body py-4 ">
+                <img id="cond-icon2" class="pb-3" alt="">
+                 <h4 id="max-deg2" class="text-white fw-bold"></h4>
+                 <p id="min-deg2" class="text-white"></p>
+                 <p id="cond-text2" class="text-primary"></p>
+               </div>
+               </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="card h-100">
+                <div class="card-footer">
+                  <small class="text-body-secondary">
+                     <span id="d3"></span>
+                  </small>
+                </div>
+               <div class="card-body py-4 text-center">
+                <img id="cond-icon3" class="pb-3" alt="">
+                 <h4 id="max-deg3" class="text-white fw-bold"></h4>
+                 <p id="min-deg3" class="text-white"></p>
+                 <p id="cond-text3" class="text-primary"></p>
+               </div>
+               </div>
+            </div>
+           </div>
+        </div>
+        <div class="footer bg-secondary py-5">
+          <div class="row container">
+            <div class="col-8">
+              <div class="inp">
+                <input class="form-control" placeholder="Enter your email to subscribe" type="text" name="" id="">
+                <button class="btn btn-primary">Subscribe</button>
+              </div>
+            </div>
+            <div class="col-2 offset-2 ico-group">
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-google-plus"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <p class="pt-3 text-white container">
+            Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    <!-- <div class="row w-75 mx-auto py-5 g-3" id="myRow">
+      <div class="col-md-4">
+          <div class="border text-center pb-3 item">
+              <img src="images/img2.gif" class="w-100" alt="">
+              <h5>Title</h5>
+              <h6 class="text-info">price</h6>
+              <h6 class="text-warning">Category</h6>
+              <p class="text-secondary">Desc</p>
+              <p class="text-danger">sale</p>
+              <h6 class="">index</h6>
+              <button class="btn btn-outline-warning">Update</button>
+              <button class="btn btn-outline-danger">Delete</button>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="border text-center pb-3 item">
+              <img src="images/img2.gif" class="w-100" alt="">
+              <h5>Title</h5>
+              <h6 class="text-info">price</h6>
+              <h6 class="text-warning">Category</h6>
+              <p class="text-secondary">Desc</p>
+              <p class="text-danger">sale</p>
+              <h6 class="">index</h6>
+              <button class="btn btn-outline-warning">Update</button>
+              <button class="btn btn-outline-danger">Delete</button>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="border text-center pb-3 item">
+              <img src="images/img2.gif" class="w-100" alt="">
+              <h5>Title</h5>
+              <h6 class="text-info">price</h6>
+              <h6 class="text-warning">Category</h6>
+              <p class="text-secondary">Desc</p>
+              <p class="text-danger">sale</p>
+              <h6 class="">index</h6>
+              <button class="btn btn-outline-warning">Update</button>
+              <button class="btn btn-outline-danger">Delete</button>
+          </div>
+      </div>
+  </div> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
